@@ -1,0 +1,76 @@
+/* تنسيق الصفحة بالكامل */
+body {
+    background-color: #f0f4f8; /* لون خلفية مريح للعين */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* تنسيق البطاقة الشخصية */
+.profile-card {
+    background-color: #ffffff; /* لون خلفية البطاقة */
+    width: 320px; /* تحديد عرض البطاقة */
+    padding: 30px 20px; /* مساحة داخلية */
+    margin: 80px auto; /* توسيط البطاقة أفقياً مع مسافة من الأعلى */
+    border: 1px solid #d1d9e6; /* إضافة إطار خفيف */
+    border-radius: 15px; /* تدوير الزوايا */
+    text-align: center; /* توسيط جميع النصوص والعناصر داخل البطاقة */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* إضافة ظل ناعم */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* نعومة الحركة للتحدي الإضافي */
+}
+
+/* التحدي الإضافي: تحريك البطاقة للأعلى عند تمرير الماوس */
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* تنسيق الصورة الشخصية */
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%; /* جعل الصورة دائرية */
+    border: 3px solid #2563eb;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* تنسيق الاسم */
+.profile-name {
+    color: #1e293b; /* لون النص */
+    font-size: 24px; /* حجم الخط */
+    margin: 10px 0 5px 0;
+}
+
+/* تنسيق المسمى الوظيفي */
+.profile-title {
+    color: #2563eb;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+/* تنسيق النبذة التعريفية */
+.profile-bio {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 25px 0;
+}
+
+/* تنسيق زر التواصل */
+.contact-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* تغيير لون الزر عند تمرير الماوس عليه */
+.contact-btn:hover {
+    background-color: #1d4ed8;
+}
